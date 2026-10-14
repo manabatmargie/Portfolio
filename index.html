@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Margie C. Manabat | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem("portfolio_theme");
+            const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            if (savedTheme === "dark" || (!savedTheme && systemPrefersDark)) {
+                document.documentElement.classList.add("dark-mode");
+            }
+        })();
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Portfolio-css.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo"><span>M</span> </a>
+
+        <div class="header-right">
+            <nav class="navbar" id="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+            </nav>
+
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Switch Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <div class="menu-icon" id="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <p class="small-title">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>
+                Hi, I'm <span>Margie</span>
+            </h1>
+
+            <h2>BSIT Student & <span class="typing-text"></span></h2>
+
+            <p class="home-description">
+                I apply both technical and creative skills to develop digital solutions that are functional, intuitive, and visually refined.
+            </p>
+
+            <div class="home-buttons">
+                <a href="#projects" class="btn primary-btn">
+                    View My Work <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="mailto:manabatargie06@gmail.com" class="btn secondary-btn">
+                    Contact Me
+                </a>
+            </div>
+
+            <a href="Manabat_Margie_Resume.pdf" class="btn primary-btn" target="_blank">
+                <i class="fa-solid fa-file-pdf"></i>
+                View Resume
+            </a>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1EArNASiRW/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://github.com/manabatmargie/ws03"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/margie-manabat/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="home-visual">
+
+            <div class="circle-bg"></div>
+
+            <div class="profile-card">
+                <div class="profile-photo">
+                    <img src="margie.2.JPG" alt="Margie C. Manabat">
+                </div>
+
+                <h3>Margie C. Manabat</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="about section" id="about">
+
+        <div class="section-title">
+            <p>GET TO KNOW ME</p>
+            <h2>About <span>Me</span></h2>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-image">
+                <div class="about-card">
+                    <span class="quote-icon">“</span>
+
+                    <h3>
+                        Learning with purpose,<br>
+                        creating with intention.
+                    </h3>
+
+                    <div class="yellow-line"></div>
+
+                    <p>Margie C. Manabat</p>
+                    <small>BSIT Student</small>
+                </div>
+            </div>
+
+            <div class="about-content">
+
+            <h3>
+                Building digital solutions with
+                <span>purpose and creativity.</span>
+            </h3>
+
+            <p>
+                I am Margie C. Manabat, a Bachelor of Science in Information
+                Technology student with an interest in web development,
+                system analysis, mobile development, UI/UX design, and
+                graphic design.
+            </p>
+
+            <p>
+                I approach each project with a focus on functionality,
+                usability, and visual clarity, combining technical knowledge
+                with creative problem-solving to create meaningful digital
+                experiences.
+            </p>
+
+            <div class="about-info">
+
+                <div>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div>
+                        <strong>Education</strong>
+                        <p>BS Information Technology</p>
+                    </div>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <strong>Based In</strong>
+                        <p>Philippines</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <section class="projects section" id="projects">
+
+        <div class="section-title">
+            <p>MY RECENT WORK</p>
+            <h2>Featured <span>Projects</span></h2>
+        </div>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+
+                <div class="project-image project-blue">
+                    
+                    <img
+                        src="mouseandmates.png"
+                        alt="Mouse and Mates Home Page"
+                    >
+
+                    <span class="project-number">01</span>
+                </div>
+
+                <div class="project-content">
+                    <span class="project-category">WEB DEVELOPMENT</span>
+
+                    <h3>Mouse And Mates</h3>
+
+                    <p>
+                        A laptop guide website that helps buyers find the
+                        right laptop based on their needs, preferences,
+                        and intended use.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="https://mouse-and-mates-s-uvog.vercel.app/index.html" class="project-link">
+                        View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="project-image project-yellow harvest-image">
+                    
+                    <img
+                        src="harvesthotel.png"
+                        alt="Harvet Hotel Home Page"
+                    >
+
+                    <span class="project-number">02</span>
+                </div>
+
+                <div class="project-content">
+                    <span class="project-category">SYSTEM DEVELOPMENT</span>
+
+                    <h3>Harvest Hotel</h3>
+
+                    <p>
+                        A hotel showcase website designed to highlight its
+                        rooms, swimming pool, amenities, and facilities,
+                        giving visitors a preview of the overall hotel experience.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Ionic Angular</span>
+                        <span>MySQL</span>
+                        <span>Web System</span>
+                    </div>
+
+                    <a href="https://harvest-hotel.vercel.app/?fbclid=IwY2xjawUwiv5leHRuA2FlbQIxMQBwZG9mA3NydGMGYXBwX2lkATAAAR7qM2TodH_JD29SC-qJMAhmpL64n0sj3lX5JIk5zlvRdudxogj80TVCG1u9kA_aem_uft0pXy7vpOmPuGIkmhggg" class="project-link">
+                        View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="project-image project-dark">
+
+                    <img
+                        src="citilife.png"
+                        alt="Citilife Diagnostic Center Home Page"
+                    >
+
+                    <span class="project-number">03</span>
+
+                </div>
+
+                <div class="project-content">
+                    <span class="project-category">SYSTEM DEVELOPMENT</span>
+
+                    <h3>Citilife Diagnostic Center</h3>
+
+                    <p>
+                        A web-based clinic system designed to streamline
+                        clinic processes and improve communication between
+                        patients, staff, and doctors even when they are working
+                        remotely.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Web System</span>
+                    </div>
+
+                    <a href="https://citilife-system-production-a5e9.up.railway.app/" 
+                    class="project-link"
+                    target="_blank">
+                        View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="project-image project-blue">
+                   
+                    <img
+                        src="eready.png"
+                        alt="E-Ready Home Page"
+                    >
+
+                    <span class="project-number">04</span>
+                </div>
+
+                <div class="project-content">
+                    <span class="project-category">SYSTEM DEVELOPMENT</span>
+
+                    <h3>E-Ready</h3>
+
+                    <p>
+                        A PHP-based inventory system created to organize and monitor
+                        emergency supplies and equipment, making it easier to track
+                        available stocks and support emergency preparedness.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Inventory System</span>
+                    </div>
+
+                    <a href="https://eready-silk.vercel.app/" class="project-link">
+                        View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="project-image project-yellow">
+                    
+                    <img
+                        src="campuscare.png"
+                        alt="Campus Care Home Page"
+                    >
+
+                    <span class="project-number">05</span>
+                </div>
+
+                <div class="project-content">
+                    <span class="project-category">SYSTEM DEVELOPMENT</span>
+
+                    <h3>Campus Care</h3>
+
+                    <p>
+                        A school clinic management system designed to help
+                        organize clinic records, monitor student health visits,
+                        and make clinic processes more efficient.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Web System</span>
+                    </div>
+
+                    <a href="https://campus-care-five-phi.vercel.app/" class="project-link">
+                        View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="skills section" id="skills">
+
+        <div class="section-title">
+            <p>WHAT I CAN DO</p>
+            <h2>My <span>Skills</span></h2>
+        </div>
+
+        <div class="skills-container">
+
+            <div class="skills-intro">
+                <h3>
+                    Skills that combine
+                    <span>technology & creativity.</span>
+                </h3>
+
+                <p>
+                    I continuously develop my skills through academic
+                    projects, personal practice, and creative work.
+                </p>
+
+                <div class="skill-line">
+                    <span>CREATIVITY</span>
+                    <div class="progress">
+                        <div style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-line">
+                    <span>PROBLEM SOLVING</span>
+                    <div class="progress">
+                        <div style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-line">
+                    <span>COMMUNICATION</span>
+                    <div class="progress">
+                        <div style="width: 88%;"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="skills-grid">
+
+            <div class="skill-card">
+                <div class="skill-icon blue-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Building responsive and functional websites
+                    using modern web technologies.
+                </p>
+
+                <div class="skill-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                </div>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-icon yellow-icon">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+
+                <h3>UI/UX & Graphic Design</h3>
+
+                <p>
+                    Creating clean, engaging, and user-friendly
+                    digital interfaces and visual designs.
+                </p>
+
+                <div class="skill-tags">
+                    <span>Figma</span>
+                    <span>Canva</span>
+                    <span>UI/UX</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon blue-icon">
+                    <i class="fa-solid fa-diagram-project"></i>
+                </div>
+
+                <h3>System Analysis</h3>
+
+                <p>
+                    Analyzing system requirements, identifying problems,
+                    and designing effective solutions for users and organizations.
+                </p>
+
+                <div class="skill-tags">
+                    <span>Requirements</span>
+                    <span>Analysis</span>
+                    <span>Documentation</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon yellow-icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+
+                <h3>Mobile Development</h3>
+
+                <p>
+                    Developing mobile applications with a focus on
+                    functionality, usability, and responsive interfaces.
+                </p>
+
+                <div class="skill-tags">
+                    <span>Ionic</span>
+                    <span>Angular</span>
+                    <span>Mobile UI</span>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Margie C. Manabat. All Rights Reserved.
+        </p>
+
+        <div class="footer-socials">
+            <a href="https://www.facebook.com/share/1EArNASiRW/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://github.com/manabatmargie/ws03" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://ph.linkedin.com/in/margie-manabat-62434a431" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="Portfolio-js.js"></script>
+
+</body>
+</html>
